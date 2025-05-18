@@ -1,0 +1,127 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+            drawer: Drawer(),
+            floatingActionButton: FloatingActionButton(
+              child: Icon(Icons.chat),
+              onPressed: () {},
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
+              hoverColor: Colors.green,
+            ),
+            appBar: AppBar(
+                backgroundColor: Colors.red,
+                elevation: 30,
+                title: Text(
+                  "Thanigai Solutions",
+                  style: TextStyle(color: Colors.white),
+                ),
+                // leading: Icon(
+                //   Icons.menu,
+                //   color: Colors.white,
+                // ),
+                actions: [
+                  Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                  Icon(
+                    Icons.more_vert,
+                    color: Colors.white,
+                  )
+                ]),
+            body: Center(
+
+                //Outline Button
+                // child: OutlinedButton(
+                //   child: Text("Outline Button", style: TextStyle(fontSize: 20)),
+                //   onPressed: () {},
+                //   style: OutlinedButton.styleFrom(
+                //     foregroundColor: Colors.red,
+                //   ),
+                // ),
+
+                //Text Button
+                // child: TextButton(
+                //   child: Text("Text Button"),
+                //   onPressed: () {},
+                // ),
+
+                // Elevated Button
+                // child: ElevatedButton(
+                //   style: ElevatedButton.styleFrom(
+                //       backgroundColor: Colors.red,
+                //       elevation: 10,
+                //       textStyle: TextStyle(
+                //         fontSize: 20,
+                //       )),
+                //   onPressed: () {
+                //     print("Hello");
+                //   },
+                //   child: Text("Click Me"),
+                // ),
+
+                //   child: CircularProgressIndicator(
+                //     color: Colors.red,
+                //     backgroundColor: Colors.amber,
+                //     strokeWidth: 5,
+                //   ),
+
+                //Circular Profile Avathar Widget
+                // child: CircleAvatar(
+                //   radius: 110,
+                //   backgroundColor: Colors.red,
+                //   child: CircleAvatar(
+                //     radius: 90,
+                //     backgroundImage: NetworkImage(
+                //         "https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png"),
+                //   ),
+                // ),
+
+                // Container Widget Practice
+                // child: Container(
+                //   height: 250,
+                //   margin: EdgeInsets.all(20),
+                //   width: double.infinity,
+                //   decoration: BoxDecoration(
+                //       color: Colors.red,
+                //       borderRadius: BorderRadius.circular(10),
+                //       image: DecorationImage(
+                //           image: NetworkImage(
+                //               "https://wallpapercave.com/wp/wp2599592.jpg"),
+                //           fit: BoxFit.fill),
+                //       boxShadow: [
+                //         BoxShadow(
+                //             color: Colors.black38,
+                //             offset: Offset(4.5, 6),
+                //             blurRadius: 10)
+                //       ]),
+                // ),
+
+                // Showing Image from Web
+                // child: Image.network(
+                //     "http://www.pngall.com/wp-content/uploads/2016/07/Technology-PNG-Image.png"),
+                // )
+
+                //Text Widget
+                // child: Text(
+                //   "Thanigai Solutions",
+                //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                // ),
+
+                // Icon Widget
+                // child: Icon(
+                //   Icons.account_box,
+                //   size: 100,
+                //   color: Colors.red,
+                // ),
+                )));
+  }
+}
